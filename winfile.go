@@ -1,4 +1,4 @@
-package goWinFile
+package gowinfile
 
 import (
 	"errors"
