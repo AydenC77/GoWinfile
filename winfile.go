@@ -1,4 +1,4 @@
-package gowinfile
+package GoWinFile
 
 import (
 	"errors"
@@ -61,7 +61,7 @@ func utf16NulPairs(pairs ...string) *uint16 {
 }
 
 // usage:
-//"Text Files (*.txt)", "*.txt"
+// "Text Files (*.txt)", "*.txt"
 func PickTextFile(filtername, filter string) (string, error) {
 	if wd, err := os.Getwd(); err == nil {
 		defer os.Chdir(wd)
