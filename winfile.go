@@ -60,6 +60,7 @@ func utf16NulPairs(pairs ...string) *uint16 {
 	return &all[0]
 }
 
+// usage:
 // eg "Text Files (*.txt)", "*.txt"
 func PickTextFile(filtername, filter string) (string, error) {
 	if wd, err := os.Getwd(); err == nil {
